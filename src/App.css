@@ -1,38 +1,135 @@
-.App {
+body {
+  background-color: #FDFAF6;
+  color: #99BC85;
+  font-family: "Arial", sans-serif;
   text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  margin-top: 50px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1 {
+  font-family: 'Pattaya', sans-serif;
+  font-size: 4rem;
+  color: #41644A;
+  margin-bottom: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.timer {
+  font-size: 5rem;
+  font-weight: bold;
+  margin: 20px 0;
+  color: #41644A;
+}
+
+.buttons {
+  margin-top: 20px;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+button {
+  background-color: #41644A;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #D3E671;
+  transform: scale(1.05);
+}
+
+button:disabled {
+  background-color: #B4B4B4;
+  cursor: not-allowed;
+}
+
+.timer-box {
+  margin: 0 auto;
+  padding: 30px;
+  width:400px;
+  height: 200px;
+  border: 2px solid #41644A;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #e4ecbe;
+  /* Glass effect properties */
+  background: rgba(228, 236, 190, 0.25);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); /* For Safari support */
+  border: 1px solid rgba(65, 100, 74, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+  
+}
+.mode-buttons {
+  margin-top: 20px;
+}
+
+.mode-buttons button {
+  background-color: #41644A;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: 0.3s;
+}
+
+.mode-buttons button:hover {
+  background-color: #D3E671;
+}
+button.active {
+  background-color: #D3E671; /* Green shade */
+  color: white;
+  font-weight: bold;
+  border: 2px solid #D3E671;
+}
+.timer-container {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 20px; /* Adjust spacing */
+}
+
+.side-button {
+  background-color: #41644A; /* Green color */
   color: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
 }
 
-.App-link {
-  color: #61dafb;
+.side-button:hover {
+  background-color: #41644A; /* Darker green on hover */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.timer-box {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
